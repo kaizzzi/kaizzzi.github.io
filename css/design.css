@@ -1,0 +1,417 @@
+/*                BASE ELEMENTS                       */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #eceae5;
+}
+
+.space{
+  height: 80px;
+}
+
+/*                SCROLL BAR                       */
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f3d3d3;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #f4a9a9;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #d47e7e;
+}
+
+
+/*                HIGHLIGHT COLOR                      */
+::selection {
+  background: #b0aaaa;
+  color: white; /* WebKit/Blink Browsers */
+}
+
+/*                NAVIGATION                       */
+.nav{
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  background-color: #d8d3c5;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.nav ul{
+  list-style-type: none;
+}
+
+.nav a{
+  float: left;
+  display: inline-block;
+  color: #45474b;
+  text-align: center;
+  padding: 14px; 16px;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-left: 16%;
+}
+
+.nav a::after{
+  content: '';
+  display:block;
+  width: 0;
+  height: 5px;
+  background: #f9e9e2;
+  margin-top: -10px;
+  transition: width 0.5s ease;
+}
+
+.nav a:hover::after{
+  width: 100%;
+}
+
+
+
+
+  /*                HEADER                       */
+.header{
+  width: 0 auto;
+  height: 850px;
+}
+
+.hdr-img{
+  background-image: url("../images/pic1.jpg");
+  background-size: auto 1150px;
+  background-position: bottom center;
+  background-attachment: fixed;
+  overflow: hidden;
+  height: 540px;
+  width: 0 auto;
+
+}
+
+.line{
+  height: 50%;
+  width: 0.5%;
+  background-color: #45474b;
+  position: absolute;
+  z-index: 1;
+  top: 35%;
+  left: 25%
+}
+
+.hs{
+  width: 40%;
+  height: 50%;
+  position: absolute;
+  left: 33%;
+  top: 45%;
+  overflow: hidden;
+}
+
+.hdr-txt p{
+  position: absolute;
+  margin: 0;
+  height: 0;
+  font-family: 'Arapey', serif;
+  font-size: 85px;
+  font-weight: 900;
+  color: #45474b;
+  line-height: 90%;
+}
+
+.subtitle{
+  position: absolute;
+  top: 59%;
+}
+.subtitle p{
+  color: #45474b;
+  font-family: 'Lato', sans-serif;
+  font-size: 100%;
+  line-height: 150%;
+}
+
+.contact{
+  width: 15%;
+  height:5.4%;
+  position: absolute;
+  left: 10%;
+  top:80%;
+}
+
+.contact img{
+  height: 50px;
+  float: right;
+  margin-right: 8%;
+}
+
+.contact img:hover{
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.contact p{
+  color: #45474b;
+  font-family: 'Lato', sans-serif;
+  font-size: 100%;
+  font-weight: 900;
+  position: relative;
+  float: right;
+  top: 40%;
+  letter-spacing: 10px;
+
+}
+
+
+
+
+/*                DIVIDER                       */
+.divider{
+  background-image: url("C:/Users/kaizz/Desktop/RP/images/pic5.png");
+  background-size: auto 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 75px;
+}
+
+
+
+/*                ABOUT                       */
+.about{
+  background-color: white;
+  height: 950px;
+  width: 1800px;
+  margin: 0 auto;
+  top: 25px;
+  position: relative;
+  margin-bottom: 35px;
+  overflow: hidden;
+}
+
+.name{
+  position: relative;
+  width: 25%;
+  height: 80%;
+  top: 10%;
+  left: 5%;
+}
+.name p{
+  font-family: 'Lato', sans-serif;
+  font-size: 60px;
+  color: #45474b;
+  position: relative;
+  top: 220px;
+  left: 100px;
+  z-index: 1;
+}
+
+.line-back{
+  background-color: #a2bfc7;
+  width: 400px;
+  height: 10px;
+  position: absolute;
+}
+.r1{
+  top: 33.5%;
+  left: 105px;
+}
+.r2{
+  background-color: #6f9aab;
+  top: 43%;
+  left: 105px;
+}
+.r3{
+  background-color: #4f7c91;
+  top:52.5%;
+  left: 105px;
+}
+.r4{
+  background-color: #2e6583;
+  left: 105px;
+  top:62%;
+}
+.r5{
+  background-color: #2b4e64;
+  left: 105px;
+  top: 71.5%;
+}
+
+.pic-n-quote {
+  width: 40%;
+  height: 80%;
+  position: relative;
+  left: 50%;
+  top:-70%;
+}
+.quote{
+  background:black;
+  opacity: 0.5;
+  width: 35%;
+  height: 80%;
+  position: absolute;
+  left: 30%;
+  top: 5%;
+  z-index: 1;
+}
+.quote p{
+  font-family: 'Arapey', serif;
+  position: absolute;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  margin: 0 auto;
+  left: 10%;
+  top: 30%;
+}
+.pic-bg{
+  width: 35%;
+  height: 80%;
+  background-image: url("C:/Users/kaizz/Desktop/RP/images/pic2.jpg");
+  position: absolute;
+  left: 50%;
+  top: 15%;
+}
+.quote hr{
+  width: 50px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+
+
+
+
+/*                SKILLS                       */
+.skills > p{
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: #45474b;
+  letter-spacing: 80px;
+}
+.skill{
+  position: relative;
+  margin-bottom: 20px;
+}
+.skill p{
+  font-family: 'Lato', sans-serif;
+  color: #45474b;
+  font-size: 20px;
+  letter-spacing: 10px;
+  margin-left: 90px;
+}
+.progress{
+  width: 1080px;
+  height: 10px;
+  position: absolute;
+  background-color: #fbdcce;
+  left: 500px;
+  top: 10px;
+}
+.p2{
+  position: absolute;
+  background-color: #f2bbad;
+  width: 800px;
+}
+.p3{
+  position: absolute;
+  background-color: #f2bbad;
+  width: 800px;
+}
+.p4{
+  position: absolute;
+  background-color: #afdfdb;
+  width: 500px;
+}
+.p5{
+  position: absolute;
+  background-color: #afdfdb;
+  width: 500px;
+}
+.p6{
+  position: absolute;
+  background-color: #fbdcce;
+  width: 1200px;
+}
+.p7{
+  position: absolute;
+  background-color: #afdfdb;
+  width: 500px;
+}
+
+
+
+/*                SAMPLE                       */
+.sample > p{
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: #45474b;
+  letter-spacing: 80px;
+}
+
+.sample div{
+}
+
+.sample a{
+  color: #45474b;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  line-height: 50%;
+}
+
+.sample a::after{
+  content: '';
+  display:block;
+  width: 0;
+  height: 20px;
+  background: #afdfdb;
+  margin-top: -20px;
+  transition: width 0.5s ease;
+}
+
+.sample a:hover::after{
+  width: 100%;
+}
+
+.gfx-des{
+  width: 280px;
+  height: 100px;
+  position: relative;
+  top: 80px;
+  left: 30%;
+}
+
+.web-des{
+  width: 280px;
+  height: 100px;
+  position: relative;
+  top: -17px;
+  left: 60%;
+}
+
+.divp{
+  font-family: 'Lato', sans-serif;
+  text-align: left;
+  font-size: 15px;
+  color: #45474b;
+}
+
+.credits{
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 15px;
+  color: #9b9890;
+}
