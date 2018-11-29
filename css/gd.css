@@ -108,11 +108,8 @@ body{
 .w1{
   height: 1544px;
 }
-.w2{
-  height: 708px;
-}
-.w3{
-  height: 1400px;
+.w2, .w3, .w10, .w11{
+  height: 761px;
 }
 .w4, .w9{
   height: 540px;
@@ -126,13 +123,6 @@ body{
 .w7{
   height: 1617px;
 }
-.w10{
-  height: 608px;
-}
-.w11{
-  height: 800px;
-}
-
 .w12{
   width:  476px;
   height: 714px;
